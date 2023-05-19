@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="cal-prin">
+            <form action="operaciones.php" method="post">
+                <p>Teclee los números para realizar la operación:</p>      
+                <p>Número 1: <input type="text" name="n1" /></p>
+                <p>Número 2: <input type="text" name="n2" /></p>
+                <p>Operación:
+                    <select name="operacion" size="1" id="operacion">
+                        <option>Suma</option>
+                        <option>Resta</option>
+                        <option>Multiplicación</option>
+                        <option>División</option>
+                    </select>
+                </p>                  
+                <button type="submit" name="operar" class="btn btn-outline-info">Operar</button>
+             </form>
+    </div>
+</body>
+</html>
